@@ -8,6 +8,7 @@
       shell:
         cmd: |
           apt update
+          apt-get update
           apt-get install -y \
              libtool \
              cmake \
