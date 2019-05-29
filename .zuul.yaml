@@ -10,4 +10,4 @@
     description: |
       Envoy build in openlab cluster.
     run: .zuul/playbooks/envoy-build/run.yaml
-    nodeset: ubuntu-xenial-arm64
+    nodeset: ubuntu-xenial
