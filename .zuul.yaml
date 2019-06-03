@@ -11,3 +11,5 @@
       Envoy build in openlab cluster.
     run: .zuul/playbooks/envoy-build/run.yaml
     nodeset: ubuntu-xenial
+    secrets:
+      - gcp_account_kind
