@@ -5,7 +5,9 @@
       shell:
         cmd: |
           echo "hhhh"
-          wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash && source ~/.bashrc
+          wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
+          export NVM_DIR="/root/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
           nvm install 8.9.3
         chdir: '{{ zuul.project.src_dir }}'
         executable: /bin/bash
