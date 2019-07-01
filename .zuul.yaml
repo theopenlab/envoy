@@ -1,6 +1,6 @@
 - project:
     name: theopenlab/envoy
-    check:
+    check-no-comments:
       jobs:
         - envoy-build-arm64-test
 
