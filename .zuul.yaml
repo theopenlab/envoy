@@ -2,10 +2,10 @@
     name: theopenlab/envoy
     check:
       jobs:
-        - envoy-build-arm64
+        - envoy-build-arm64-test
 
 - job:
-    name: envoy-build-arm64
+    name: envoy-build-arm64-test
     parent: init-test
     description: |
       Envoy build in openlab cluster.
